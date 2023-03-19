@@ -1,0 +1,19 @@
+    <h1>Storage and Sources</h1>
+
+    <table class="table table-striped table-bordered border-success">
+        <thead>
+            <tr>
+                <th>Storage ID</th>
+                <th>Source Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each storageandsources}}
+                <tr>
+                <td>{{this.storageStorageID}}</td>
+                <td>{{this.sourcesSourceName}}</td>     
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>

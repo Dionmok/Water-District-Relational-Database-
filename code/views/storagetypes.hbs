@@ -1,0 +1,39 @@
+<h1>Storage Types</h1>
+Add a new Storage Type.
+<hr /><br />
+
+<table class="table table-striped table-bordered border-success">
+  <thead>
+    <tr>
+      <th>Storage Type</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each storageTypes}}
+      <tr storageTypeValue={{this.storageType}}>
+        <td>{{this.storageType}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<hr /><br />
+
+<div id="insert" style="display: block">
+  <form method="POST" id="add-storage-type-form-ajax">
+    <legend><strong>Add Storage Type</strong></legend>
+    <fieldset class="fields">
+      <label> Storage Type </label>
+      <input type="text" id="storageType-input" />
+    </fieldset>
+    <input
+      class="btn btn-success"
+      type="submit"
+      id="addStorageType"
+      value="Add an Storage Type"
+    />
+  </form>
+  <script src="../public/js/add_storage_type.js"></script>
+  <!--add new Storage Type-->
+</div><!-- insert -->

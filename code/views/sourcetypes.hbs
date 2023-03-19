@@ -1,0 +1,39 @@
+<h1>Source Types</h1>
+Add a new Source Type.
+<hr /><br />
+
+<table class="table table-striped table-bordered border-success">
+  <thead>
+    <tr>
+      <th>Source Type</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each sourceTypes}}
+      <tr sourceTypeValue={{this.sourceType}}>
+        <td>{{this.sourceType}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<hr /><br />
+
+<div id="insert" style="display: block">
+  <form method="POST" id="add-sourcetypes-form-ajax">
+    <legend><strong>Add Source Type</strong></legend>
+    <fieldset class="fields">
+      <label> Source Type </label>
+      <input type="text" id="sourceType-input" />
+    </fieldset>
+    <input
+      class="btn btn-success"
+      type="submit"
+      id="addSourceType"
+      value="Add an Source Type"
+    />
+  </form>
+  <script src="../public/js/add_source_types.js"></script>
+  <!--add new Source Type-->
+</div><!-- insert -->

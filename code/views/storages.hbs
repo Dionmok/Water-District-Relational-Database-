@@ -1,0 +1,136 @@
+<h1>Storages</h1>
+Add a new Storage.
+<hr /><br />
+
+<table class="table table-striped table-bordered border-success">
+  <thead>
+    <tr>
+      <th>Storage ID</th>
+      <th>Storage Capacity</th>
+      <th>Storage Type</th>
+      <th>Cover Type</th>
+      <th>Material</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each data}}
+      <tr storageValue={{this.storageID}}>
+        <td>{{this.storageID}}</td>
+        <td>{{this.storageCapacity}}</td>
+        <td>{{this.storageTypesStorageType}}</td>
+        <td>{{this.isCovered}}</td>
+        <td>{{this.materialsMaterial}}</td>        
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<hr /><br />
+
+<table class="table table-striped table-bordered border-success">
+  <thead>
+    <caption>Addresses</caption>
+    <tr>
+      <th>Address ID</th>
+      <th>Street</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each addresses}}
+      <tr addressValue={{this.addressID}}>
+        <td>{{this.addressID}}</td>
+        <td>{{this.street}}</td>
+        <td>{{this.city}}</td>
+        <td>{{this.state}}</td>
+        <td>{{this.zip}}</td>        
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<hr /><br />
+
+<div id="insert" style="display: block">
+  <form method="POST" id="add-storage-form-ajax">
+    <legend><strong>Add Storage</strong></legend>
+    <fieldset class="fields">
+      <label> Storage Capacity </label>
+      <input type="text" id="input-storage-capacity" />
+      </select>
+      <label> Storage Type</label> <select type="text" id="input-storage-type">
+            {{#each storagetypes}}
+            <option value="{{this.storageType}}">{{this.storageType}}</option>
+            {{/each}}
+      </select>
+      </select>
+      <label> Is Covered </label> <select type="text" id="input-is-covered">
+            <option value="0">Uncovered</option>
+            <option value="1">Covered</option>
+      </select>
+      <label> Material</label> <select type="text" id="input-material">
+            {{#each material}}
+            <option value="{{this.material}}">{{this.material}}</option>
+            {{/each}}
+      </select>
+            <label> Address ID</label> <select type="text" id="input-address-id">
+            {{#each addresses}}
+            <option value="{{this.addressID}}">{{this.addressID}}</option>
+            {{/each}}
+      </select>
+      <label> Source Name</label> <select type="text" id="input-source-name">
+            {{#each sources}}
+            <option value="{{this.sourceName}}">{{this.sourceName}}</option>
+            {{/each}}
+      </select>
+    </fieldset>
+    <input
+      class="btn btn-success"
+      type="submit"
+      id="addStorage"
+      value="Add a Storage"
+    />
+  </form>
+  <script src="../public/js/add-storages.js"></script>
+  <!--add new storage-->
+
+<div id="update" style="display: block">
+  <form method="POST" id="update-storage-form-ajax">
+    <legend><strong>Update Storage</strong></legend>
+    <fieldset class="fields">
+     <label> Storage ID</label> <select type="text" id="update-storage-id">
+            {{#each storageIDs}}
+            <option value="{{this.storageID}}">{{this.storageID}}</option>
+            {{/each}}
+      </select>
+      <label> Storage Capacity </label>
+      <input type="text" id="update-storage-capacity" />
+      </select>
+      <label> Storage Type</label> <select type="text" id="update-storage-type">
+            {{#each storagetypes}}
+            <option value="{{this.storageType}}">{{this.storageType}}</option>
+            {{/each}}
+      </select>
+      </select>
+      <label> Is Covered </label> <select type="text" id="update-is-covered">
+            <option value="0">Uncovered</option>
+            <option value="1">Covered</option>
+      </select>
+      <label> Material</label> <select type="text" id="update-material">
+            {{#each material}}
+            <option value="{{this.material}}">{{this.material}}</option>
+            {{/each}}
+      </select>
+    </fieldset>
+    <input
+      class="btn btn-success"
+      type="submit"
+      id="updateStorage"
+      value="Update a Storage"
+    />
+  </form>
+  <script src="../public/js/update_storages.js"></script>

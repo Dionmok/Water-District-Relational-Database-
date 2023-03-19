@@ -1,0 +1,50 @@
+<script
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+></script>
+<h1>Materials</h1>
+Add a new Material.
+<hr /><br />
+
+<table
+  id="materials-table"
+  class="table table-striped table-bordered border-success"
+>
+  <thead>
+    <th>Materials</th>
+    <th>Delete Material</th>
+  </thead>
+  <tbody>
+    {{#each materials}}
+      <tr materialValue={{this.material}}>
+        <td>{{this.material}}</td>
+        <td><button
+            onclick="deleteMaterial('{{this.material}}')"
+          >Delete</button></td>
+      </tr>
+
+    {{/each}}
+
+  </tbody>
+</table>
+
+<hr /><br />
+
+<div id="insert" style="display: block">
+  <form method="POST" id="add-material-form-ajax">
+    <legend><strong>Add Material</strong></legend>
+    <fieldset class="fields">
+      <label> Material </label>
+      <input type="text" id="material-input" />
+    </fieldset>
+    <input
+      class="btn btn-success"
+      type="submit"
+      id="addMaterial"
+      value="Add a Material"
+    />
+  </form>
+  <script src="../public/js/add_material.js"></script>
+  <!--add new material-->
+</div><!-- insert -->
+
+<script src="../public/js/delete_material.js"></script>

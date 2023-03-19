@@ -1,0 +1,111 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<h1>Customers</h1>
+
+Add/update/delete customer. Search for customer using Zip and Occupant Type.
+<hr><br>
+
+{{!-- Create a table --}}
+<table id="customers-table" class="table table-striped table-bordered border-success">
+
+    {{!-- Header section --}}
+    <thead>
+
+        {{!-- For just the first row, we print each key of the row object as a header cell so we
+        know what each column means when the page renders --}}
+        <tr>
+
+            <th>Customer ID</th>
+            <th>Potable Water</th>
+            <th>Recycled Water</th>
+            <th>Occupant Type</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Delete Customer</th>
+
+        </tr>
+    </thead>
+
+    {{!-- Body section --}}
+    <tbody>
+
+        {{!-- For each row, print the id, fname, lname, homeworld and age, in order --}}
+        {{#each data}}
+        <tr customerIDvalue={{this.customerID}}>
+            <td>{{this.customerID}}</td>
+            <td>{{this.potableWater}}</td>
+            <td>{{this.recycledWater}}</td>
+            <td>{{this.occupantTypesOccupantType}}</td>
+            <td>{{this.street}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.state}}</td>
+            <td>{{this.zip}}</td>
+            <td><button onclick="deleteCustomer({{this.customerID}})">Delete</button></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<hr><br>
+
+<div id="search" style="display: block">
+    <form method="GET" id="searchCustomer" action='/customers'>
+        <legend><strong>Search Customer</strong></legend>
+        <fieldset class="fields">
+            <label> Zip Code </label> <input type="text" name="zipCode">
+        </fieldset>
+        <input class="btn btn-success" type="submit" id="searchCustomer" value="Search for a Customer">
+        <a href='/customers'><button class="btn btn-success">Reset</button></a>
+    </form>
+    <!--search for customer-->
+</div><!-- insert -->
+
+<hr><br>
+
+<div id="insert" style="display: block">
+    <form method="POST" id="add-customer-form-ajax">
+        <legend><strong>Add Customer</strong></legend>
+        <fieldset class="fields">
+            <label> Potable Water </label> <input type="text" name="potableWater" id="potableWater-input">
+            <label> Recycled Water </label> <input type="text" name="recycledWater" id="recycledWater-input">
+            <label> Occupant Type </label> <select type="text" name="occupantType" id="occupantType-input">
+                {{#each occupanttypes}}
+                <option value="{{this.occupantType}}">{{this.occupantType}}</option>
+                {{/each}}
+            </select>
+        </fieldset>
+        <input class="btn btn-success" type="submit" value="Add a Customer">
+        <input class="btn btn-success" type="button" value="Cancel">
+    </form>
+    <!--add new customer-->
+
+    <hr><br>
+
+    <div id="update" style="display: block">
+        <form method="POST" id="update-customer-form-ajax">
+            <legend><strong>Update Customer</strong></legend>
+            <fieldset class="fields">
+                <label> Customer Id</label><select type="text" id="input-customer-id">
+                    {{#each customerIDs}}
+                    <option value="{{this.customerID}}">{{this.customerID}}</option>
+                    {{/each}}
+                </select>
+                <label> Potable Water </label> <input type="text" id="input-potable-water">
+                <label> Recycled Water </label> <input type="text" id="input-recycled-water">
+                <label> Occupant Type </label> <select type="text" id="input-occupant-type">
+                    {{#each occupanttypes}}
+                    <option value="{{this.occupantType}}">{{this.occupantType}}</option>
+                    {{/each}}
+                </select>
+            </fieldset>
+            <input class="btn btn-success" type="submit" id="updateCustomer" value="Update a Customer">
+        </form>
+        <script src="../public/js/update_customer.js"></script>
+        <!--update customer-->
+    </div><!-- insert -->
+
+</div><!-- insert -->
+
+<script src="../public/js/add-customer.js"></script>
+<script src="../public/js/delete_customer.js"></script>

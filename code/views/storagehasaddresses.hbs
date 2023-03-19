@@ -1,0 +1,19 @@
+    <h1>Storage and Addresses</h1>
+
+    <table class="table table-striped table-bordered border-success">
+        <thead>
+            <tr>
+                <th>Storage ID</th>
+                <th>Address ID </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each storageandaddress}}
+                <tr>
+                <td>{{this.storageStorageID}}</td>
+                <td>{{this.addressesAddressID}}</td>     
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>

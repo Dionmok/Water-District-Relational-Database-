@@ -1,0 +1,39 @@
+<h1>Occupant Types</h1>
+Add a new Occupant Type.
+<hr /><br />
+
+<table class="table table-striped table-bordered border-success">
+  <thead>
+    <tr>
+      <th>Occupant Type</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each occupantTypes}}
+      <tr occupantTypeValue={{this.occupantType}}>
+        <td>{{this.occupantType}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<hr /><br />
+
+<div id="insert" style="display: block">
+  <form method="POST" id="add-occupant-type-form-ajax">
+    <legend><strong>Add Occupant Type</strong></legend>
+    <fieldset class="fields">
+      <label> Occupant Type </label>
+      <input type="text" id="occupantType-input" />
+    </fieldset>
+    <input
+      class="btn btn-success"
+      type="submit"
+      id="addOccupantType"
+      value="Add an Occupant Type"
+    />
+  </form>
+  <script src="../public/js/add_occupant_type.js"></script>
+  <!--add new Occupant Type-->
+</div><!-- insert -->

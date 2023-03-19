@@ -1,0 +1,25 @@
+td,
+th {
+    border: 1px solid rgb(7, 46, 78);
+    padding: 8px;
+}
+
+tr td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    background-color: burlywood;
+    color: #000000;
+}
+
+tr:nth-child(even) {
+    background-color: aqua;
+}
+
+tr th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    background-color: #106445;
+    color: antiquewhite;
+}
