@@ -14,11 +14,11 @@ Scalability and Flexibility: Design the database schema and application architec
 ## Technologies Used
 The project will utilize the following technologies:
 
-Relational Database Management System (RDBMS): MySQL
-Database Modeling: MySQL Workbench & Lucidchart
-Backend Development: Node.js and Express.js for developing RESTful APIs
-Frontend Development: React.js for creating a dynamic single-page web application
-Database: MongoDB for data storage
+-Relational Database Management System (RDBMS): MySQL
+-Database Modeling: MySQL Workbench & Lucidchart
+-Backend Development: Node.js and Express.js for developing RESTful APIs
+-Frontend Development: React.js for creating a dynamic single-page web application
+-Database: MongoDB for data storage
 HTML and CSS for creating an interactive and adaptive graphical user interface
 
 ## Project Deliverables
