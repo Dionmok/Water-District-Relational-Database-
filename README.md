@@ -24,13 +24,13 @@ HTML and CSS for creating an interactive and adaptive graphical user interface
 ## Project Deliverables
 The following deliverables are expected as part of the project:
 
-Relational Database Schema: Design and implementation of a well-structured database schema that represents the water district's entities, relationships, and attributes.
-Database Initialization Script: A script to create the database structure, tables, and necessary constraints, as well as populate initial data for testing purposes.
-Backend APIs: Develop RESTful APIs using Node.js and Express.js to manage user data, apply CRUD operations, and interact with the MongoDB database.
-Frontend Single-Page Application: Create a dynamic single-page web application using React.js that allows users to track exercises and provides a highly responsive user experience.
-Interactive and Adaptive User Interface: Develop an interactive and adaptive graphical user interface using HTML and CSS that adjusts dynamically based on user behavior and device parameters.
-Documentation: Provide comprehensive documentation including system architecture, database schema explanation, API documentation, and instructions for setup and deployment.
-Testing and Quality Assurance: Conduct thorough testing to ensure the functionality, performance, and reliability of the system, including both unit tests and integration tests.
+- Relational Database Schema: Design and implementation of a well-structured database schema that represents the water district's entities, relationships, and attributes.
+- Database Initialization Script: A script to create the database structure, tables, and necessary constraints, as well as populate initial data for testing purposes.
+- Backend APIs: Develop RESTful APIs using Node.js and Express.js to manage user data, apply CRUD operations, and interact with the MongoDB database.
+- Frontend Single-Page Application: Create a dynamic single-page web application using React.js that allows users to track exercises and provides a highly responsive user experience.
+- Interactive and Adaptive User Interface: Develop an interactive and adaptive graphical user interface using HTML and CSS that adjusts dynamically based on user behavior and device parameters.
+- Documentation: Provide comprehensive documentation including system architecture, database schema explanation, API documentation, and instructions for setup and deployment.
+- Testing and Quality Assurance: Conduct thorough testing to ensure the functionality, performance, and reliability of the system, including both unit tests and integration tests.
 Project Timeline
 
 ## Conclusion
