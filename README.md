@@ -12,8 +12,6 @@ User-Friendly Interface: Develop a user-friendly interface, such as a web-based 
 Scalability and Flexibility: Design the database schema and application architecture to accommodate future growth, changes in requirements, and integration with additional systems or modules.
 
 ## Technologies Used
-The project will utilize the following technologies:
-
 - Relational Database Management System (RDBMS): MySQL
 - Database Modeling: MySQL Workbench & Lucidchart
 - Backend Development: Node.js and Express.js for developing RESTful APIs
@@ -22,8 +20,6 @@ The project will utilize the following technologies:
 HTML and CSS for creating an interactive and adaptive graphical user interface
 
 ## Project Deliverables
-The following deliverables are expected as part of the project:
-
 - Relational Database Schema: Design and implementation of a well-structured database schema that represents the water district's entities, relationships, and attributes.
 - Database Initialization Script: A script to create the database structure, tables, and necessary constraints, as well as populate initial data for testing purposes.
 - Backend APIs: Develop RESTful APIs using Node.js and Express.js to manage user data, apply CRUD operations, and interact with the MongoDB database.
