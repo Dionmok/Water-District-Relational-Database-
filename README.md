@@ -4,7 +4,6 @@ Introduction
 The Water District Relational Database project is a comprehensive solution designed to manage and organize data related to water distribution and management within a specific district. This project aims to provide a robust and scalable database system that enables efficient data storage, retrieval, analysis, and reporting for water district operations.
 
 ## Project Goals
-The main objectives of this project are as follows:
 
 Data Centralization: Develop a centralized database system to consolidate and store various types of data related to water distribution, including customer information, water sources, infrastructure details, billing records, and consumption data.
 Data Integrity: Ensure data accuracy, consistency, and integrity by implementing appropriate validation rules, constraints, and normalization techniques within the database schema.
@@ -25,7 +24,7 @@ HTML and CSS for creating an interactive and adaptive graphical user interface
 ## Project Deliverables
 The following deliverables are expected as part of the project:
 
-Relational Database Schema: Design and implementation of a well-structured database schema that represents the water district's entities, relationships, and attributes.
+Relational Database Schema:**bold** Design and implementation of a well-structured database schema that represents the water district's entities, relationships, and attributes.
 Database Initialization Script: A script to create the database structure, tables, and necessary constraints, as well as populate initial data for testing purposes.
 Backend APIs: Develop RESTful APIs using Node.js and Express.js to manage user data, apply CRUD operations, and interact with the MongoDB database.
 Frontend Single-Page Application: Create a dynamic single-page web application using React.js that allows users to track exercises and provides a highly responsive user experience.
