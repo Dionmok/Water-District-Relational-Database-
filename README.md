@@ -24,7 +24,7 @@ HTML and CSS for creating an interactive and adaptive graphical user interface
 ## Project Deliverables
 The following deliverables are expected as part of the project:
 
-Relational Database Schema:**bold** Design and implementation of a well-structured database schema that represents the water district's entities, relationships, and attributes.
+Relational Database Schema: Design and implementation of a well-structured database schema that represents the water district's entities, relationships, and attributes.
 Database Initialization Script: A script to create the database structure, tables, and necessary constraints, as well as populate initial data for testing purposes.
 Backend APIs: Develop RESTful APIs using Node.js and Express.js to manage user data, apply CRUD operations, and interact with the MongoDB database.
 Frontend Single-Page Application: Create a dynamic single-page web application using React.js that allows users to track exercises and provides a highly responsive user experience.
